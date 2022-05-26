@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art-Group - Zadanie rekrutacyjne</title>
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container-xxl">
+            <a href="#" class="header__brand">
+                <img src="dist/img/logo.png" alt="" class="header__logo">
+            </a>
+            <div class="header__nav-wrapper">
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Firma</a>
+                        </li>
+                        <li class="header__menu-item has-dropdown">
+                            <a href="#" class="header__menu-link">Rozwój</a>
+                            <ul class="header__submenu">
+                                <li><a href="">Element submenu 1</a></li>
+                                <li><a href="">Element submenu 2</a></li>
+                                <li><a href="">Element submenu 3</a></li>
+                                <li><a href="">Element submenu 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Zrównowazony rozwój</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Relacje inwestorskie</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Kariera</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__icons">
+                    <ul class="header__icons-list">
+                        <li>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22.454" height="22.454"
+                                    viewBox="0 0 22.454 22.454">
+                                    <g transform="translate(-0.439 -0.439)">
+                                        <path
+                                            d="M17.156,18.884a9.307,9.307,0,0,1-5.49,1.9C5.2,20.788,1.5,13.394,1.5,13.394A17.052,17.052,0,0,1,6.177,7.9M9.726,6.222A8.429,8.429,0,0,1,11.667,6c6.47,0,10.167,7.394,10.167,7.394a17.1,17.1,0,0,1-2,2.948m-6.211-.989a2.773,2.773,0,1,1-3.919-3.919"
+                                            transform="translate(0 -1.727)" fill="none" stroke="#191a1b"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <path d="M1.5,1.5,21.833,21.833" fill="none" stroke="#191a1b"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="font-zoom">
+                            <button class="font-zoom__in">+</button>
+                            <span>A</span>
+                            <button class="font-zoom__out">-</button>
+                        </li>
+                        <li class="header__menu-item has-dropdown">
+                            <span class="header__menu-link lang-select">PL</span>
+                            <ul class="header__submenu">
+                                <li><a href="">PL</a></li>
+                                <li><a href="">EN</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="search-box-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="19.856" height="20" viewBox="0 0 19.856 20">
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path
+                                                d="M1335.927,92.91a7.961,7.961,0,1,1,1.084-1.056l5.844,5.844-1.07,1.071Zm-11.413-6.191a6.436,6.436,0,1,0,6.437-6.436A6.443,6.443,0,0,0,1324.514,86.719Z"
+                                                fill="#191a1b" />
+                                        </clipPath>
+                                    </defs>
+                                    <g transform="translate(-1322.999 -78.769)" clip-path="url(#a)">
+                                        <rect width="29.856" height="30" transform="translate(1317.999 73.77)"
+                                            fill="#191a1b" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </li>
+                        <div class="search-box">
+                            <form method="POST" class="search-box__form">
+                                <input type="text" placeholder="Szukaj..." name="search" autofocus="true"
+                                    autocomplete="off">
+                                <button type="submit"><i class="ion-ios-search-strong"></i></button>
+                            </form>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__item breadcrumbs__item--link">Strona główna</a>
+                    <span class="breadcrumbs__separator"><i class="ion-ios-arrow-right"></i></span>
+                    <span class="breadcrumbs__item breadcrumbs__item--current">Kontakt</span>
+                </nav>
+                <h1 class="hero__title">Kontakt</h1>
+                <div class="hero__contact-row row">
+                    <div class="col-lg-5">
+                        <div class="hero__contact-info">
+                            <h3>FABRYKI MEBLI "FORTE" SA</h3>
+                            <p>ul. Biała 1, 07-300 Ostrów Mazowiecka</p>
+                        </div>
+                        <div class="hero__see-map">
+                            <a href="#map" class="has-primary-color">
+                                Zobacz na mapie
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.869" height="11.251"
+                                    viewBox="0 0 16.869 11.251">
+                                    <path
+                                        d="M18.633,11.467a.766.766,0,0,0-.006,1.078l3.562,3.568H8.631a.762.762,0,0,0,0,1.523H22.183l-3.562,3.568a.771.771,0,0,0,.006,1.078.759.759,0,0,0,1.072-.006l4.828-4.863h0a.855.855,0,0,0,.158-.24.727.727,0,0,0,.059-.293.764.764,0,0,0-.217-.533L19.7,11.485A.746.746,0,0,0,18.633,11.467Z"
+                                        transform="translate(-7.875 -11.251)" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <p>Sąd Rejonowy w Białymstoku, XII Wydział Gospodarczy KRS<br><br> KRS: 0000021840 NIP:
+                            7590005082<br><br> Kapitał zakładowy - 23 930 769 PLN w całości opłacony</p>
+                    </div>
+                </div>
+                <a href="#info" class="button-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="16.869" viewBox="0 0 11.25 16.869">
+                        <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
+                            d="M18.633,11.467a.766.766,0,0,0-.006,1.078l3.562,3.568H8.631a.762.762,0,0,0,0,1.523H22.183l-3.562,3.568a.771.771,0,0,0,.006,1.078.759.759,0,0,0,1.072-.006l4.828-4.863h0a.855.855,0,0,0,.158-.24.727.727,0,0,0,.059-.293.764.764,0,0,0-.217-.533L19.7,11.485A.746.746,0,0,0,18.633,11.467Z"
+                            transform="translate(22.502 -7.875) rotate(90)" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="contact-info" id="info">
+            <div class="container">
+                <div class="contact-info__inner">
+                    <div class="contact-info__details">
+                        <h3 class="contact-info__details-title">Biuro obsługi klienta</h3>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M9.366,10.682a10.556,10.556,0,0,0,3.952,3.952L14.2,13.4a1,1,0,0,1,1.294-.3,11.422,11.422,0,0,0,4.583,1.364,1,1,0,0,1,.921,1v4.462a1,1,0,0,1-.9,1A15.509,15.509,0,0,1,3.082,3.9a1,1,0,0,1,1-.9H8.539a1,1,0,0,1,1,.921A11.422,11.422,0,0,0,10.9,8.5,1,1,0,0,1,10.6,9.8l-1.238.884Zm-2.522-.657,1.9-1.357A13.41,13.41,0,0,1,7.647,5H5.01C5,5.166,5,5.333,5,5.5A13.5,13.5,0,0,0,18.5,19c.167,0,.334,0,.5-.01V16.353a13.41,13.41,0,0,1-3.668-1.1l-1.357,1.9a12.442,12.442,0,0,1-1.588-.75l-.058-.033a12.556,12.556,0,0,1-4.7-4.7l-.033-.058a12.442,12.442,0,0,1-.75-1.588Z"
+                                        transform="translate(-3 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>tel.: <a href="tel:+48801644222">801 644 222</a></p>
+                                <span class="d-block">pn - pt: 8:00 - 16:00<br> (opłata zgodna z taryfą
+                                    operatora)</span>
+                            </div>
+                        </div>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>e-mail: <a href="mailto:infolinia@forte.com.pl"
+                                        class="has-primary-color">infolinia@forte.com.pl</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info__details">
+                        <h3 class="contact-info__details-title">Centrala</h3>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M9.366,10.682a10.556,10.556,0,0,0,3.952,3.952L14.2,13.4a1,1,0,0,1,1.294-.3,11.422,11.422,0,0,0,4.583,1.364,1,1,0,0,1,.921,1v4.462a1,1,0,0,1-.9,1A15.509,15.509,0,0,1,3.082,3.9a1,1,0,0,1,1-.9H8.539a1,1,0,0,1,1,.921A11.422,11.422,0,0,0,10.9,8.5,1,1,0,0,1,10.6,9.8l-1.238.884Zm-2.522-.657,1.9-1.357A13.41,13.41,0,0,1,7.647,5H5.01C5,5.166,5,5.333,5,5.5A13.5,13.5,0,0,0,18.5,19c.167,0,.334,0,.5-.01V16.353a13.41,13.41,0,0,1-3.668-1.1l-1.357,1.9a12.442,12.442,0,0,1-1.588-.75l-.058-.033a12.556,12.556,0,0,1-4.7-4.7l-.033-.058a12.442,12.442,0,0,1-.75-1.588Z"
+                                        transform="translate(-3 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>tel.: <a href="tel:+48296442222">+48 29 64 42 222</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,14H16.584a5,5,0,0,1-9.168,0H4v5H20Zm0-2V5H4v7H9a3,3,0,0,0,6,0Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>tel.: <a href="fax:+48296442110">+48 29 64 42 110</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>e-mail: <a href="mailto:forte@forte.com.pl"
+                                        class="has-primary-color">forte@forte.com.pl</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info__details">
+                        <h3 class="contact-info__details-title">Inspektor Ochrony Danych<br> Michał Kluska</h3>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>e-mail: <a href="mailto:daneosobowe@forte.com.pl"
+                                        class="has-primary-color is-underline">daneosobowe@forte.com.pl</a></p>
+                            </div>
+                        </div>
+                        <a href="#" class="button button--secondary">
+                            Zgłoś naruszenie
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.869" height="11.251"
+                                viewBox="0 0 16.869 11.251">
+                                <path
+                                    d="M18.633,11.467a.766.766,0,0,0-.006,1.078l3.562,3.568H8.631a.762.762,0,0,0,0,1.523H22.183l-3.562,3.568a.771.771,0,0,0,.006,1.078.759.759,0,0,0,1.072-.006l4.828-4.863h0a.855.855,0,0,0,.158-.24.727.727,0,0,0,.059-.293.764.764,0,0,0-.217-.533L19.7,11.485A.746.746,0,0,0,18.633,11.467Z"
+                                    transform="translate(-7.875 -11.251)" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="nav-sticky">
+            <div class="container-xl">
+                <ul class="nav-sticky__list">
+                    <li class="nav-sticky__list-item">
+                        <a href="#kontakt" data-page="kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-sticky__list-item">
+                        <a href="#fabryki-mebli" data-page="fabryki-mebli">Fabryki mebli</a>
+                    </li>
+                    <li class="nav-sticky__list-item">
+                        <a href="#siec-sprzedazy" data-page="siec-sprzedazy">Sieć sprzedaży</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="scroll-section" id="kontakt">
+            <div class="container-xl">
+                <div class="tiles">
+                    <div class="tile" data-aos="fade-up">
+                        <div class="tile__icon">
+                            <img src="dist/img/media.svg" alt="Dla mediów">
+                        </div>
+                        <h3 class="heading">Dla mediów</h3>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>e-mail: <a href="mailto:media@forte.com.pl"
+                                        class="has-primary-color">media@forte.com.pl</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile" data-aos="fade-up">
+                        <div class="tile__icon">
+                            <img src="dist/img/investors.svg" alt="DLa inwestorów">
+                        </div>
+                        <h3 class="heading">Dla inwestorów</h3>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>e-mail: <a href="mailto:media@forte.com.pl"
+                                        class="has-primary-color">media@forte.com.pl</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile" data-aos="fade-up">
+                        <div class="tile__icon">
+                            <img src="dist/img/hands.svg" alt="Dla partnerów">
+                        </div>
+                        <h3 class="heading">Dla mediów</h3>
+                        <a href="#" class="button">
+                            Zgłoś naruszenie
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.869" height="11.251"
+                                viewBox="0 0 16.869 11.251">
+                                <path
+                                    d="M18.633,11.467a.766.766,0,0,0-.006,1.078l3.562,3.568H8.631a.762.762,0,0,0,0,1.523H22.183l-3.562,3.568a.771.771,0,0,0,.006,1.078.759.759,0,0,0,1.072-.006l4.828-4.863h0a.855.855,0,0,0,.158-.24.727.727,0,0,0,.059-.293.764.764,0,0,0-.217-.533L19.7,11.485A.746.746,0,0,0,18.633,11.467Z"
+                                    transform="translate(-7.875 -11.251)" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="tile" data-aos="fade-up">
+                        <div class="tile__icon">
+                            <img src="dist/img/truck.svg" alt="Dla dostawców">
+                        </div>
+                        <h3 class="heading">Dla dostawców</h3>
+                        <div class="contact-link">
+                            <div class="contact-link__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                    <path
+                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                        transform="translate(-2 -3)" />
+                                </svg>
+                            </div>
+                            <div class="contact-link__content">
+                                <p>e-mail: <a href="mailto:media@forte.com.pl"
+                                        class="has-primary-color">media@forte.com.pl</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="block-media-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="block-media-text__text">
+                                <div data-aos="fade-up">
+                                    <h3 class="heading">Fabryka płyt wiórowych</h3>
+                                    <div class="mt-md-5">
+                                        <h4 class="has-medium-font-size">TANNE Sp z o.o.</h4>
+                                        <p>ul. Dubowo I - nr 60<br> 16-400 Suwałki</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg"></div>
+                    </div>
+                </div>
+                <div class="block-media-text__media">
+                    <img src="dist/img/image_01.jpg" alt="Fabryka płyt wiórowych">
+                </div>
+            </div>
+            <div class="block-media-text block-media-text--reversed block-media-text--light">
+                <div class="container">
+                    <div class="row flex-md-row-reverse">
+                        <div class="col-12 col-md-5">
+                            <div class="block-media-text__text">
+                                <div data-aos="fade-up">
+                                    <div class="contact-info__details contact-info__details--dark">
+                                        <h3 class="contact-info__details-title">Sprzedaż płyty wiórowej<br> Jarosław
+                                            Cierpiałowski</h3>
+                                        <div class="contact-link">
+                                            <div class="contact-link__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M9.366,10.682a10.556,10.556,0,0,0,3.952,3.952L14.2,13.4a1,1,0,0,1,1.294-.3,11.422,11.422,0,0,0,4.583,1.364,1,1,0,0,1,.921,1v4.462a1,1,0,0,1-.9,1A15.509,15.509,0,0,1,3.082,3.9a1,1,0,0,1,1-.9H8.539a1,1,0,0,1,1,.921A11.422,11.422,0,0,0,10.9,8.5,1,1,0,0,1,10.6,9.8l-1.238.884Zm-2.522-.657,1.9-1.357A13.41,13.41,0,0,1,7.647,5H5.01C5,5.166,5,5.333,5,5.5A13.5,13.5,0,0,0,18.5,19c.167,0,.334,0,.5-.01V16.353a13.41,13.41,0,0,1-3.668-1.1l-1.357,1.9a12.442,12.442,0,0,1-1.588-.75l-.058-.033a12.556,12.556,0,0,1-4.7-4.7l-.033-.058a12.442,12.442,0,0,1-.75-1.588Z"
+                                                        transform="translate(-3 -3)" />
+                                                </svg>
+                                            </div>
+                                            <div class="contact-link__content">
+                                                <p>tel.: <a href="tel:+48885563221">+48 885 563 221</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-link">
+                                            <div class="contact-link__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                                    viewBox="0 0 20 18">
+                                                    <path
+                                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                                        transform="translate(-2 -3)" />
+                                                </svg>
+                                            </div>
+                                            <div class="contact-link__content">
+                                                <p>e-mail: <a href="mailto:jaroslaw.cierpialowski@forte.com.pl"
+                                                        class="has-primary-color">jaroslaw.cierpialowski@forte.com.pl</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info__details contact-info__details--dark">
+                                        <h3 class="contact-info__details-title">Zakupy surowców do produkcji płyty
+                                            wiórowej<br> Marcin Wołczuk</h3>
+                                        <div class="contact-link">
+                                            <div class="contact-link__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                                    viewBox="0 0 20 18">
+                                                    <path
+                                                        d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                                        transform="translate(-2 -3)" />
+                                                </svg>
+                                            </div>
+                                            <div class="contact-link__content">
+                                                <p>e-mail: <a href="mailto:marcin.wolczuk@forte.com.pl"
+                                                        class="has-primary-color">marcin.wolczuk@forte.com.pl</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg"></div>
+                    </div>
+                </div>
+                <div class="block-media-text__media">
+                    <img src="dist/img/image_02.jpg" alt="Fabryka płyt wiórowych">
+                </div>
+            </div>
+        </section>
+        <section class="scroll-section" id="fabryki-mebli">
+            <header class="section-header">
+                <div class="container-xl">
+                    <h2 class="section-title">Fabryki mebli</h2>
+                </div>
+            </header>
+            <div><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8878.703707092163!2d23.171311599020385!3d53.1431038746483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc246793a087%3A0x677d1fd0d0f53a40!2sFabryki%20Mebli%20Forte!5e0!3m2!1spl!2spl!4v1653502057966!5m2!1spl!2spl"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </section>
+        <section class="scroll-section" id="siec-sprzedazy">
+            <header class="section-header">
+                <div class="container-xl">
+                    <h2 class="section-title">Sieć sprzedaży</h2>
+                </div>
+            </header>
+            <div class="collapse-cards container-xl" data-aos="fade-up">
+                <button class="collapse-card" data-collapse-target="collapse_polska">
+                    <div class="collapse-card__thumb">
+                        <img src="dist/img/polska.jpg" alt="Polska">
+                    </div>
+                    <div class="collapse-card__body">
+                        <h3 class="collapse-card__title">Polska</h3>
+                        <svg class="collapse-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="11.435"
+                            viewBox="0 0 20 11.435">
+                            <path
+                                d="M16.191,19.235l7.562-7.568a1.423,1.423,0,0,1,2.019,0,1.441,1.441,0,0,1,0,2.025L17.2,22.265a1.427,1.427,0,0,1-1.971.042L6.6,13.7a1.429,1.429,0,0,1,2.019-2.025Z"
+                                transform="translate(-6.188 -11.247)" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse-card__hidden" id="collapse_polska">
+                    <ul>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">
+                                <h4 class="has-medium-font-size">Jan Nowak</h4>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="collapse-card__contact">
+                                <div class="contact-link">
+                                    <div class="contact-link__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18">
+                                            <path
+                                                d="M9.366,10.682a10.556,10.556,0,0,0,3.952,3.952L14.2,13.4a1,1,0,0,1,1.294-.3,11.422,11.422,0,0,0,4.583,1.364,1,1,0,0,1,.921,1v4.462a1,1,0,0,1-.9,1A15.509,15.509,0,0,1,3.082,3.9a1,1,0,0,1,1-.9H8.539a1,1,0,0,1,1,.921A11.422,11.422,0,0,0,10.9,8.5,1,1,0,0,1,10.6,9.8l-1.238.884Zm-2.522-.657,1.9-1.357A13.41,13.41,0,0,1,7.647,5H5.01C5,5.166,5,5.333,5,5.5A13.5,13.5,0,0,0,18.5,19c.167,0,.334,0,.5-.01V16.353a13.41,13.41,0,0,1-3.668-1.1l-1.357,1.9a12.442,12.442,0,0,1-1.588-.75l-.058-.033a12.556,12.556,0,0,1-4.7-4.7l-.033-.058a12.442,12.442,0,0,1-.75-1.588Z"
+                                                transform="translate(-3 -3)"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-link__content">
+                                        <p>tel.: <a href="tel:+48111222333">+48 111 222 333</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-link">
+                                    <div class="contact-link__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                            viewBox="0 0 20 18">
+                                            <path
+                                                d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,14H16.584a5,5,0,0,1-9.168,0H4v5H20Zm0-2V5H4v7H9a3,3,0,0,0,6,0Z"
+                                                transform="translate(-2 -3)"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-link__content">
+                                        <p>fax: <a href="fax:+48296442110">+48 29 64 42 110</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse-card__contact">
+                                <div class="contact-link">
+                                    <div class="contact-link__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                            viewBox="0 0 20 18">
+                                            <path
+                                                d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                                transform="translate(-2 -3)"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-link__content">
+                                        <p>e-mail: <a href="mailto:imie.nazwisko@forte.com.pl"
+                                                class="has-primary-color">imie.nazwisko@forte.com.pl</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">
+                                <h4 class="has-medium-font-size">Marcin Wójcik</h4>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="collapse-card__contact">
+                                <div class="contact-link">
+                                    <div class="contact-link__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18">
+                                            <path
+                                                d="M9.366,10.682a10.556,10.556,0,0,0,3.952,3.952L14.2,13.4a1,1,0,0,1,1.294-.3,11.422,11.422,0,0,0,4.583,1.364,1,1,0,0,1,.921,1v4.462a1,1,0,0,1-.9,1A15.509,15.509,0,0,1,3.082,3.9a1,1,0,0,1,1-.9H8.539a1,1,0,0,1,1,.921A11.422,11.422,0,0,0,10.9,8.5,1,1,0,0,1,10.6,9.8l-1.238.884Zm-2.522-.657,1.9-1.357A13.41,13.41,0,0,1,7.647,5H5.01C5,5.166,5,5.333,5,5.5A13.5,13.5,0,0,0,18.5,19c.167,0,.334,0,.5-.01V16.353a13.41,13.41,0,0,1-3.668-1.1l-1.357,1.9a12.442,12.442,0,0,1-1.588-.75l-.058-.033a12.556,12.556,0,0,1-4.7-4.7l-.033-.058a12.442,12.442,0,0,1-.75-1.588Z"
+                                                transform="translate(-3 -3)"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-link__content">
+                                        <p>tel.: <a href="tel:+48111222333">+48 111 222 333</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse-card__contact">
+                                <div class="contact-link">
+                                    <div class="contact-link__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                            viewBox="0 0 20 18">
+                                            <path
+                                                d="M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3ZM20,7.238l-7.928,7.1L4,7.216V19H20ZM4.511,5l7.55,6.662L19.5,5Z"
+                                                transform="translate(-2 -3)"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-link__content">
+                                        <p>e-mail: <a href="mailto:imie.nazwisko@forte.com.pl"
+                                                class="has-primary-color">imie.nazwisko@forte.com.pl</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="collapse-card" data-collapse-target="collapse_niemcy">
+                    <div class="collapse-card__thumb">
+                        <img src="dist/img/niemcy.jpg" alt="Niemcy, Austria, Holandia">
+                    </div>
+                    <div class="collapse-card__body">
+                        <h3 class="collapse-card__title">Niemcy, Austria, Holandia</h3>
+                        <svg class="collapse-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="11.435"
+                            viewBox="0 0 20 11.435">
+                            <path
+                                d="M16.191,19.235l7.562-7.568a1.423,1.423,0,0,1,2.019,0,1.441,1.441,0,0,1,0,2.025L17.2,22.265a1.427,1.427,0,0,1-1.971.042L6.6,13.7a1.429,1.429,0,0,1,2.019-2.025Z"
+                                transform="translate(-6.188 -11.247)" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse-card__hidden" id="collapse_niemcy">
+                    <ul>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="collapse-card" data-collapse-target="collapse_slowacja">
+                    <div class="collapse-card__thumb">
+                        <img src="dist/img/slowacja.jpg" alt="Słowacja, Czechy, Węgry">
+                    </div>
+                    <div class="collapse-card__body">
+                        <h3 class="collapse-card__title">Słowacja, Czechy, Węgry</h3>
+                        <svg class="collapse-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="11.435"
+                            viewBox="0 0 20 11.435">
+                            <path
+                                d="M16.191,19.235l7.562-7.568a1.423,1.423,0,0,1,2.019,0,1.441,1.441,0,0,1,0,2.025L17.2,22.265a1.427,1.427,0,0,1-1.971.042L6.6,13.7a1.429,1.429,0,0,1,2.019-2.025Z"
+                                transform="translate(-6.188 -11.247)" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse-card__hidden" id="collapse_slowacja">
+                    <ul>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">SŁOWACJA Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="collapse-card" data-collapse-target="collapse_rumunia">
+                    <div class="collapse-card__thumb">
+                        <img src="dist/img/rumunia.jpg" alt="Rumunia">
+                    </div>
+                    <div class="collapse-card__body">
+                        <h3 class="collapse-card__title">Rumunia</h3>
+                        <svg class="collapse-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="11.435"
+                            viewBox="0 0 20 11.435">
+                            <path
+                                d="M16.191,19.235l7.562-7.568a1.423,1.423,0,0,1,2.019,0,1.441,1.441,0,0,1,0,2.025L17.2,22.265a1.427,1.427,0,0,1-1.971.042L6.6,13.7a1.429,1.429,0,0,1,2.019-2.025Z"
+                                transform="translate(-6.188 -11.247)" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse-card__hidden" id="collapse_rumunia">
+                    <ul>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">RUMUNIA. Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="collapse-card" data-collapse-target="collapse_wielka_brytania">
+                    <div class="collapse-card__thumb">
+                        <img src="dist/img/wielka-brytania.jpg" alt="Wielka Brytania, Irlandia">
+                    </div>
+                    <div class="collapse-card__body">
+                        <h3 class="collapse-card__title">Wielka Brytania, Irlandia</h3>
+                        <svg class="collapse-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="11.435"
+                            viewBox="0 0 20 11.435">
+                            <path
+                                d="M16.191,19.235l7.562-7.568a1.423,1.423,0,0,1,2.019,0,1.441,1.441,0,0,1,0,2.025L17.2,22.265a1.427,1.427,0,0,1-1.971.042L6.6,13.7a1.429,1.429,0,0,1,2.019-2.025Z"
+                                transform="translate(-6.188 -11.247)" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse-card__hidden" id="collapse_wielka_brytania">
+                    <ul>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">WIELKA BRYTANIA Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="collapse-card" data-collapse-target="collapse_hiszpania">
+                    <div class="collapse-card__thumb">
+                        <img src="dist/img/hiszpania.jpg" alt="Hiszpania, Portugalia">
+                    </div>
+                    <div class="collapse-card__body">
+                        <h3 class="collapse-card__title">Hiszpania, Portugalia</h3>
+                        <svg class="collapse-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="11.435"
+                            viewBox="0 0 20 11.435">
+                            <path
+                                d="M16.191,19.235l7.562-7.568a1.423,1.423,0,0,1,2.019,0,1.441,1.441,0,0,1,0,2.025L17.2,22.265a1.427,1.427,0,0,1-1.971.042L6.6,13.7a1.429,1.429,0,0,1,2.019-2.025Z"
+                                transform="translate(-6.188 -11.247)" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse-card__hidden" id="collapse_hiszpania">
+                    <ul>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">HISZPANIA Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                        <li class="collapse-card__list-item">
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet.</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eligendi, sequi?</div>
+                            <div class="collapse-card__contact">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-xl">
+            <div class="footer__social-media">
+                <a href="#">
+                    <img src="dist/img/youtube.svg" alt="YouTube">
+                </a>
+                <a href="#">
+                    <img src="dist/img/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="dist/img/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="#">
+                    <img src="dist/img/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <div class="footer__left">
+                        <p>FABRYKI MEBLI "FORTE" SA</p>
+                        <p>ul. Biała 1, 07-300 Ostrów Mazowiecki</p>
+                        <p>tel. <a href="tel:+48 29 64 42 222">+48 29 64 42 222</a>,<br class="d-block d-lg-none" />
+                            tel. <a href="tel:+48 29 64 42 110">+48 29 64 42 110</a>,<br class="d-block d-lg-none" />
+                            e-mail. <a href="mailto:forte@forte.com.pl">forte@forte.com.pl</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="footer__menu">
+                        <li><a href="#">Dla partnerów</a></li>
+                        <li><a href="#">Kariera</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Mapa strony</a></li>
+                    </ul>
+                    <p class="footer__copyright">&copy; 2021 FABRYKA MEBLI "FORTE" SA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="dist/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 500,
+            ease: 'ease-in-cubic',
+            disable: 'mobile'
+        });
+    </script>
+</body>
+
+</html>

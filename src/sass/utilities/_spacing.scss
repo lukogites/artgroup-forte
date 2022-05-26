@@ -1,0 +1,81 @@
+$amounts: (0, 0), (1, 1), (2, 2), (3, 3), (4, 4), (5, 5);
+$sides: (top, bottom, left, right);
+
+@each $count, $space in $amounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$count} {
+      margin-#{$side}: #{$space}rem !important;
+    }
+    .p#{str-slice($side, 0, 1)}-#{$count} {
+      padding-#{$side}: #{$space}rem !important;
+    }
+  }
+}
+
+
+@each $count, $space in $amounts {
+  .mx-#{$count} {
+    margin-left: #{$space}rem !important;
+    margin-right: #{$space}rem !important;
+  }
+  .px-#{$count} {
+    padding-left: #{$space}rem !important;
+    padding-right: #{$space}rem !important;
+  }
+  .my-#{$count} {
+    margin-top: #{$space}rem !important;
+    margin-bottom: #{$space}rem !important;
+  }
+  .py-#{$count} {
+    padding-top: #{$space}rem !important;
+    padding-bottom: #{$space}rem !important;
+  }
+}
+
+@for $i from 0 through 3 {
+  .m-#{$i} {
+    margin: $i * 1rem !important;
+	}
+	.p-#{$i} {
+    padding: $i * 1rem !important;
+	}
+}
+
+@include lg-down {
+  @each $count, $space in $amounts {
+    @each $side in $sides {
+      .m#{str-slice($side, 0, 1)}-#{$count}-m {
+        margin-#{$side}: #{$space}rem !important;
+      }
+      .p#{str-slice($side, 0, 1)}-#{$count}-m {
+        padding-#{$side}: #{$space}rem !important;
+      }
+    }
+  }
+  @for $i from 0 through 3 {
+    .m-#{$i}-m {
+      margin: $i * 1rem !important;
+    }
+    .p-#{$i}-m {
+      padding: $i * 1rem !important;
+    }
+  }
+  @each $count, $space in $amounts {
+    .mx-#{$count}-m {
+      margin-left: #{$space}rem !important;
+      margin-right: #{$space}rem !important;
+    }
+    .px-#{$count}-m {
+      padding-left: #{$space}rem !important;
+      padding-right: #{$space}rem !important;
+    }
+    .my-#{$count}-m {
+      margin-top: #{$space}rem !important;
+      margin-bottom: #{$space}rem !important;
+    }
+    .py-#{$count}-m {
+      padding-top: #{$space}rem !important;
+      padding-bottom: #{$space}rem !important;
+    }
+  }
+}

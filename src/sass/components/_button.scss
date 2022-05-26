@@ -1,0 +1,77 @@
+.button-down,
+.button {
+    position: relative;
+    border: 2px solid $color-primary;
+    transform: perspective(1px) translateZ(0);
+    transition: color .2s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        transition: transform .2s;
+        z-index: -1;
+    }
+}
+
+.button-down {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    color: $color-primary;
+
+    svg path {
+        fill: currentColor;
+        transition: fill .2s;
+    }
+
+    &::before {
+        background-color: $color-primary;
+        transform: scaleY(0);
+        transform-origin: 50% 0;
+        transition: transform .2s;
+    }
+
+    &:hover {
+        svg path {
+            fill: #000;
+        }
+
+        &::before {
+            transform: scaleY(1);
+        }
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+    padding: rem(14px) 1.25rem;
+    border: 2px solid $color-primary;
+    color: #000;
+    font-size: rem(14px);
+
+    svg path {
+        fill: currentColor;
+    }
+
+    &--secondary {
+        color: $color-primary;
+    }
+
+    &::before {
+        background-color: $color-primary;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+    }
+
+    &:hover {
+        color: #000;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+    }
+}

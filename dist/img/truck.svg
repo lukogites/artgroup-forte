@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="102" viewBox="0 0 152 102">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3892" data-name="Rectangle 3892" width="152" height="102" transform="translate(0 -0.5)" fill="none" stroke="#000" stroke-width="4"/>
+    </clipPath>
+  </defs>
+  <g id="Group_15562" data-name="Group 15562" transform="translate(0 0.5)">
+    <g id="Group_15550" data-name="Group 15550">
+      <g id="Group_15549" data-name="Group 15549" clip-path="url(#clip-path)">
+        <path id="Path_29457" data-name="Path 29457" d="M4,35.891V1H89.641V77.125h-22.2" transform="translate(8.688 2.172)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+        <rect id="Rectangle_3891" data-name="Rectangle 3891" width="67" height="54" transform="translate(3 44.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+      </g>
+    </g>
+    <rect id="Rectangle_3893" data-name="Rectangle 3893" width="23" height="13" transform="translate(25 44.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+    <line id="Line_571" data-name="Line 571" x2="6" transform="translate(13 85.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+    <line id="Line_572" data-name="Line 572" x2="7" transform="translate(25 85.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+    <g id="Group_15552" data-name="Group 15552">
+      <g id="Group_15551" data-name="Group 15551" clip-path="url(#clip-path)">
+        <path id="Path_29458" data-name="Path 29458" d="M31,7H56.194a6.352,6.352,0,0,1,5.243,2.769L72.234,29.2h3.172c3.568,0,6.344,2.363,6.344,7.019V57.75a6.342,6.342,0,0,1-6.344,6.344H69.063" transform="translate(67.328 15.203)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+        <ellipse id="Ellipse_28" data-name="Ellipse 28" cx="12.716" cy="12.659" rx="12.716" ry="12.659" transform="translate(110.959 69.848)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+        <line id="Line_573" data-name="Line 573" x2="13" transform="translate(98 79.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+        <path id="Path_29459" data-name="Path 29459" d="M33,23.688H55.2V20.516L48.859,11" transform="translate(71.672 23.891)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

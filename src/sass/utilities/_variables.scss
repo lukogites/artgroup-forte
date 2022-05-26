@@ -1,0 +1,19 @@
+// Kolory
+$color-primary: #FBBA00 !default;
+
+@function rem($pixels) {
+    @return ($pixels / 16px) * 1rem;
+}
+
+// Rodziny fontów
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+$font-third: false;
+
+// Grubość czcionki
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;

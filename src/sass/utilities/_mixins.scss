@@ -1,0 +1,95 @@
+@use 'sass:math';
+
+@mixin sm-down {
+    @media screen and (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@mixin sm-up {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md-down {
+    @media screen and (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin md-up {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg-down {
+    @media screen and (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin lg-up {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl-up {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xl-down {
+    @media screen and (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin xl-only {
+    @media (min-width: 1200px) and (max-width: 1489.98px) {
+        @content;
+    }
+}
+
+@mixin xxl-down {
+    @media screen and (max-width: 1489.98px) {
+        @content;
+    }
+}
+
+@mixin xxl-up {
+    @media screen and (min-width: 1490px) {
+        @content;
+    }
+}
+
+@mixin overlay ( $color, $alpha, $index: 1 ) {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color, $alpha);
+        z-index: $index;
+    }
+}
+
+@mixin aspect-ratio($ratio: 1 1, $selector: "> :first-child") {
+    $selector: unquote($selector);
+
+    position: relative;
+    padding-bottom: percentage(math.div(nth($ratio, 2), nth($ratio, 1)));
+
+    #{$selector} {
+        left: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
