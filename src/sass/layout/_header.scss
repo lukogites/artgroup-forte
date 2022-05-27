@@ -65,7 +65,7 @@
             top: 80px;
             display: block;
             height: calc(100vh - 80px);
-            width: 16.25rem;
+            min-width: 16.25rem;
             padding: 1rem;
             transform: translateX(100%);
             transition: transform .4s;

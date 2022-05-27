@@ -368,8 +368,10 @@ label {
 }
 
 button {
+    border: 0;
     border-radius: 0;
     background-color: transparent;
+    outline: none;
 }
 
 button:focus:not(:focus-visible) {
@@ -382,6 +384,7 @@ select,
 optgroup,
 textarea {
     margin: 0;
+    color: inherit;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
@@ -413,6 +416,7 @@ button,
 [type=reset],
 [type=submit] {
     -webkit-appearance: button;
+    appearance: none;
 }
 
 button:not(:disabled),
@@ -420,12 +424,6 @@ button:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
     cursor: pointer;
-}
-
-button {
-    appearance: none;
-    border: 0;
-    outline: none;
 }
 
 ::-moz-focus-inner {

@@ -35,6 +35,9 @@
             display: block;
             padding: 24px 12px;
 
+            @include md-down {
+                    font-size: rem(13px);
+                }
             &::before {
                 content: '';
                 position: absolute;
