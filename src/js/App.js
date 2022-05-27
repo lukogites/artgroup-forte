@@ -20,8 +20,8 @@ function sliceIntoChunks([...arr], chunkSize) {
 }
 
 function wrapElements(parent, wrappingElementClass, size) {
-    let childrens = document.querySelector(parent).children;
-    let arrayChunks = sliceIntoChunks(childrens, size);
+    const childrens = document.querySelector(parent).children;
+    const arrayChunks = sliceIntoChunks(childrens, size);
     $(arrayChunks).each(function (index, element) {
         $(element).wrapAll(`<div class="${wrappingElementClass}"></div>`);
     });
@@ -110,18 +110,20 @@ class App {
 
         searchBoxTrigger.on('click', function () {
             searchBox.toggleClass('is-active');
-            searchBox.find('input').focus();
+            searchBox.find('input').trigger('focus');
         });
     }
 
     collapseCards() {
         const cards = $('.collapse-card');
+        const cardHidden = $('div.collapse-card__hidden');
 
         cards.each(function (index, element) {
             $(element).on('click', function () {
                 let target = $(this).data('collapse-target');
                 if (target !== undefined) {
-                    let that = $(this);
+
+                    const that = $(this);
 
                     if (!that.hasClass('is-active')) {
                         cards.removeClass('is-active');
@@ -130,8 +132,10 @@ class App {
                         that.removeClass('is-active');
                     }
 
-                    $('div.collapse-card__hidden').not(`#${target}`).slideUp(120);
-                    $(`#${target}`).delay(60).slideToggle(120);
+                    cardHidden.not(`#${target}`).slideUp(120);
+                    cardHidden.promise().done(function () {
+                        $(`#${target}`).slideToggle(120);
+                    });
                 };
             });
         });
